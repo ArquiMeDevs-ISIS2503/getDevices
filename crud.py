@@ -1,6 +1,6 @@
 # crud.py
 from sqlalchemy.orm import Session
-from devices import Device
+from models import Device
 
 def get_devices(db: Session):
     return db.query(Device).filter(Device.active == True).all()
