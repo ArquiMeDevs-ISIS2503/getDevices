@@ -14,7 +14,7 @@ def get_db():
     finally:
         db.close()
 
-@app.get("/")
+@app.get("/prueba")
 def read_root():
     return {"message": "Hola, mundo"}
 
