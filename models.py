@@ -14,7 +14,7 @@ class Device(Base):
     name = Column(String(length=50))
     amount = Column(Integer, nullable=True, default=None)
     type = Column(String(length=50))
-    date_maintenance = Column(DateTime, server_default='now()', nullable=True)
+    dateMaintainance = Column(DateTime, server_default='now()', nullable=True)
 
     def __str__(self):
         return '%s %s' % (self.name, self.type)

@@ -28,4 +28,4 @@ cd getDevices
 pip3 install -r requirements.txt
 ```
 
-Para detener la ejecución del microservicio se debe presionar las teclas Ctrl + C. Además para probar ambos debe ingresar a la siguiente dirección: http://34.72.34.0:8080/{nombre del endpoint}.
+Para detener la ejecución del microservicio se debe presionar las teclas Ctrl + C. Además para probar ambos debe ingresar a la siguiente dirección: http://35.225.29.96:8080/{nombre del endpoint}.
