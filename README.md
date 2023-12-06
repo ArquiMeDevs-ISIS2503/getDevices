@@ -8,6 +8,12 @@ $ python3 -m uvicorn main:app --host 0.0.0.0 --port 8080 --reload
 
 En primer lugar, siga los siguientes pasos para la instalación en la máquina virtual de interés:
 
+0. Clone el repositorio
+
+```bash
+git clone https://github.com/ArquiMeDevs-ISIS2503/getDevices.git
+```
+
 1. Instalar pip 
 
 ```bash
