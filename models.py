@@ -3,10 +3,10 @@ from sqlalchemy.orm import relationship
 from database import Base
 
 class Device(Base):
-    __tablename__ = 'devices'
+    __tablename__ = 'devices_device' 
 
     id = Column(Integer, primary_key=True, index=True)
-    site_id = Column(Integer, ForeignKey('sites.id'), index=True)
+    site_id = Column(Integer, ForeignKey('sites_site.id'), index=True)
     site = relationship("Site", back_populates="devices")
     active = Column(Boolean)
     code = Column(Integer, nullable=True, default=None)
@@ -20,7 +20,7 @@ class Device(Base):
         return '%s %s' % (self.name, self.type)
 
 class Site(Base):
-    __tablename__ = 'sites'
+    __tablename__ = 'sites_site' 
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String(50))
