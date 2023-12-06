@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
-from models.device import Device
-from models.site import Site
+from devices import Device
+from sites import Site
 from database import SessionLocal, engine
 import crud
 

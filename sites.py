@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship
-from models.base import Base
+from database import Base
 
 class Site(Base):
     __tablename__ = 'sites'

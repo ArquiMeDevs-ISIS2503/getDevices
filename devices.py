@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Boolean, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
-from models.base import Base
+from database import Base
 
 class Device(Base):
     __tablename__ = 'devices'
