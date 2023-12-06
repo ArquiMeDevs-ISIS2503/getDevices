@@ -30,7 +30,13 @@ cd getDevices
 pip3 install -r requirements.txt
 ```
 
+3. Una vez instaladas las dependencias, se debe ejecutar el siguiente comando para correr el microservicio
+
+```bash
+python3 -m uvicorn main:app --host 0.0.0.0 --port 8080
+```
+
 Para detener la ejecución del microservicio se debe presionar las teclas Ctrl + C. Además para probar ambos debe ingresar a la siguiente dirección: http://35.225.29.96:8080/{nombre del endpoint}. A continuación se encuentran los endpoints disponibles:
 
-1. /devices/{sede} : Consulta los devices de una sede en específico. Ejemplo: http://35.225.29.96:8080/devices/sede/Marly
-2. /devices : Consulta todos los devices. Ejemplo: http://35.225.29.96:8080/devices 
+1. /devices/{sede} : Consulta los devices de una sede en específico. Ejemplo: http://35.225.29.96:8080/devices/sede/Barrancabermeja
+2. /devices : Consulta todos los devices. Ejemplo: http://35.225.29.96:8080/devices
