@@ -14,6 +14,10 @@ def get_db():
     finally:
         db.close()
 
+@app.get("/")
+def read_root():
+    return {"message": "Hola, mundo"}
+
 @app.get("/devices")
 def read_devices(db: Session = Depends(get_db)):
     return crud.get_devices(db)
