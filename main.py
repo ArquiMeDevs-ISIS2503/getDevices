@@ -1,14 +1,15 @@
-# main.py
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
-import database
+from models.device import Device
+from models.site import Site
+from database import SessionLocal, engine
 import crud
 
 app = FastAPI()
 
 # Dependencia para obtener la sesión de base de datos
 def get_db():
-    db = database.SessionLocal()
+    db = SessionLocal()
     try:
         yield db
     finally:
