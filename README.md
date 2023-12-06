@@ -11,6 +11,7 @@ En primer lugar, siga los siguientes pasos para la instalación en la máquina v
 1. Instalar pip 
 
 ```bash
+sudo apt update
 sudo apt install python3-pip
 ```
 
@@ -21,4 +22,4 @@ cd getDevices
 pip3 install -r requirements.txt
 ```
 
-Para detener la ejecución del microservicio se debe presionar las teclas Ctrl + C. Además para probar ambos debe ingresar a la siguiente dirección: http://35.225.29.96:8080/{nombre del endpoint}.
+Para detener la ejecución del microservicio se debe presionar las teclas Ctrl + C. Además para probar ambos debe ingresar a la siguiente dirección: http://34.72.34.0:8080/{nombre del endpoint}.
